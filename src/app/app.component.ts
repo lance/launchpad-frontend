@@ -10,11 +10,8 @@ import { Router } from "@angular/router";
   }
 })
 export class AppComponent {
-  constructor(private router: Router) {
-    router.events.subscribe((url:any) => {
-      this.intro = url.url == '/' || url.url == '/wizard';
-    });
+  constructor() {
   }
 
-  intro: boolean;
+  intro: boolean = true;
 }

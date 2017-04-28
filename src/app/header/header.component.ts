@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { Logger } from '../shared/logger.service';
-import { KeycloakService } from "../shared/keycloak.service";
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -11,6 +8,4 @@ import { KeycloakService } from "../shared/keycloak.service";
 })
 
 export class HeaderComponent {
-  collapse:boolean;
-  constructor(private keycloak: KeycloakService){}
 }
